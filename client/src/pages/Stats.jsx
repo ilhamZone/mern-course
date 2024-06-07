@@ -12,7 +12,7 @@ const statsQuery = {
 };
 
 export const loader = (queryClient) => async () => {
-  const data = await queryClient.ensureQueryData(statsQuery);
+  await queryClient.ensureQueryData(statsQuery);
   return null;
 };
 
